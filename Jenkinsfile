@@ -9,7 +9,7 @@ pipeline {
       }
     }
     stage('Run') {
-      steps { bat  'java -cp out HelloWorld' }
+      steps {bat HelloWorld}
     }
   }
   post { always { archiveArtifacts artifacts: 'out/**/*.class', allowEmptyArchive: true } }
