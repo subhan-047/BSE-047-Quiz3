@@ -5,7 +5,7 @@ pipeline {
     stage('Compile') {
       steps {
         bat 'mkdir -p out'
-        bat 'javac src/HelloWorld.java -d out'
+        bat 'javac HelloWorld.java '
       }
     }
     stage('Run') {
